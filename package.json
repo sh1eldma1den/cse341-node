@@ -1,0 +1,23 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "code for week one",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh1eldma1den/cse341-node.git"
+  },
+  "keywords": [
+    "week",
+    "one"
+  ],
+  "author": "Megan Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh1eldma1den/cse341-node/issues"
+  },
+  "homepage": "https://github.com/sh1eldma1den/cse341-node#readme"
+}
