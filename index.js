@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 // require the use of the .env file with username and pw
 require('dotenv').config();
 const app = express();
