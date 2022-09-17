@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/sh1eldma1den/cse341-node#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1"
   }
 }
