@@ -5,12 +5,12 @@ const port = process.env.PORT || 3000;
 require('dotenv').config();
 const app = express();
 // connect to mongodb
-// mongoose.connect(`mongodb://${process.env.DB_NAME}:${process.env.DB_PASS}@ds241658.mlab.com:41658/test_db`,(err)=>{
+mongoose.connect(`mongodb://${process.env.DB_NAME}:${process.env.DB_PASS}@ds241658.mlab.com:41658/test_db`,(err)=>{
 
-// if(err) throw err;
+if(err) throw err;
 
-// console.log('DB Connected Successfully');
-// })
+console.log('DB Connected Successfully');
+})
 
 
 
