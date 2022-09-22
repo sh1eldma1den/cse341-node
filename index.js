@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-const connectDB = require('cse341/.env')
+const connectDB = require('./connection.js')
 const cors = require('cors');
 
 app.use(cors());
