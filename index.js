@@ -1,16 +1,16 @@
 const express = require('express');
-const app = express();
-const cors = require('cors');
+const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
-const port = process.env.PORT || 8080;
 
-app.use(cors());
+const port = process.env.PORT || 8080;
+const app = express();
+
+app.use(bodyParser.json());
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
-})
+});
 app.use('/', require('./routes'));
-require('dotenv').config();
 
 mongodb.initDb((err, mongodb) => {
     if (err) {
