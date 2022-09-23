@@ -3,8 +3,8 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getContacts = async (req, res, next) => {
   const result = await mongodb
-    .getDb
-    .db
+    .getDb()
+    .db()
     .collection("contacts")
     .find();
   result.toArray().then((lists) => {
@@ -16,8 +16,8 @@ const getContacts = async (req, res, next) => {
 const getPerson = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
-    .getDb
-    .db
+    .getDb()
+    .db()
     .collection("contacts")
     .find({ _id: userId});
   result.toArray().then((lists) => {
