@@ -2,9 +2,11 @@
   "name": "cse341",
   "version": "1.0.0",
   "description": "code for week one",
-  "main": "index.js",
+  "main": "server.js",
+  
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
