@@ -1,19 +1,19 @@
 const mongodb = require('../db/connect');
 
-const getUser = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection('user').find();
+const getContacts = async (req, res, next) => {
+  const result = await mongodb.getDb().db().collection('cse341.contacts').findAll();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists[0]);
   });
 };
 
-const getUsername = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection('user').find();
+const getPerson = async (req, res, next) => {
+  const result = await mongodb.getDb().db().collection('cse341.contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists[0].username);
+    res.status(200).json(lists[0]._id(ObjectId('6329c369d876ca3c2783bea9')));
   });
 };
 
-module.exports = { getUser, getUsername };
+module.exports = { getContacts, getPerson };
