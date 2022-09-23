@@ -1,9 +1,11 @@
+### Try reaching localhost
+GET http://localhost:8080 HTTP/1.1
 ### Get all contacts
-GET http://localhost:3000/contacts HTTP/1.1
+GET http://localhost:3000/localhost:8080/contacts HTTP/1.1
 ### Get contact by _id
-GET http://localhost:3000/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
+GET http://localhost:8080/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
 
 ### Same requests on render
 GET https://cse341-770w.onrender.com/contacts HTTP/1.1
 ### by _id on Render
-GET https://cse341-770w.onrender.com/6329c369d876ca3c2783bea9
+GET https://cse341-770w.onrender.com/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
