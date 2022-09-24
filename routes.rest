@@ -7,6 +7,7 @@ GET http://localhost:8080/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
 ### Create contact 
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"Dylan",
     "lastName":"Messings", 
@@ -16,6 +17,7 @@ content-type: application/json
 ### PUT contact 
 PUT http://localhost:8080/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
 content-type: application/json 
+
 {
     "firstName":"Sondra", 
     "lastName":"Hall", 
@@ -23,7 +25,7 @@ content-type: application/json
     "favoriteColor":"pink"
 } 
 ### DELETE contact 
-DELETE http://localhost:8080/contacts/6329c422d876ca3c2783beaa HTTP/1.1
+DELETE http://localhost:8080/contacts/632f17a3f1bd136ab5680547 HTTP/1.1
 
 ### Same requests on render
 GET http://cse341-770w.onrender.com/contacts HTTP/1.1
@@ -32,6 +34,7 @@ GET http://cse341-770w.onrender.com/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
 ### Create contact 
 POST http://cse341-770w.onrender.com/contacts HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"Dylan",
     "lastName":"Messings", 
@@ -41,6 +44,7 @@ content-type: application/json
 ### PUT contact 
 PUT http://cse341-770w.onrender.com/contacts/6329c369d876ca3c2783bea9 HTTP/1.1
 content-type: application/json
+
 {
     "firstName":"Sondra", 
     "lastName":"Hall", 
@@ -48,4 +52,4 @@ content-type: application/json
     "favoriteColor":"pink"
 } 
 ### DELETE contact 
-DELETE http://cse341-770w.onrender.com/contacts/6329c422d876ca3c2783beaa HTTP/1.1
+DELETE http://cse341-770w.onrender.com/contacts/632f17a3f1bd136ab5680547 HTTP/1.1
