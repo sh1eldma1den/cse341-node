@@ -1,4 +1,3 @@
-const { result } = require('underscore');
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
@@ -38,7 +37,7 @@ const createContact = async (req, res) => {
     .getDb()
     .db()
     .collection('contacts')
-    .find({_id: userId});
+    .insertOne(contact);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
