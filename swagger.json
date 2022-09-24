@@ -18,20 +18,6 @@
         "responses": {}
       }
     },
-    "/contacts": {
-      "get": {
-        "description": "GET request that gets a contact by id",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "post": {
         "description": "",
         "parameters": [
