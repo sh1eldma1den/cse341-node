@@ -18,16 +18,29 @@
         "responses": {}
       }
     },
-      "post": {
+    "/contacts/": {
+      "get": {
         "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "firstName": {
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+    "post": {
+      "description": "",
+      "parameters": [
+        {
+        "name": "body",
+        "in": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "firstName": {
                   "example": "any"
                 },
                 "lastName": {
@@ -39,10 +52,10 @@
                 "favoriteColor": {
                   "example": "any"
                 }
-              }
             }
           }
-        ],
+        }
+      ],
         "responses": {
           "201": {
             "description": "Created"
